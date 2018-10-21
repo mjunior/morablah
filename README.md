@@ -3,7 +3,7 @@
 ## PROBLEMA
 
 Vivemos um momento de crise onde temos a diminuição da renda, aumento dos preços e uma das maior taxas de desemprego da história. Juntamente com isso temos por outro lado o crescente movimento da economia compartilhada, gera faz com que as pessoas possam ter acessibilidade a mais serviços.
-Um dos pontos mais impactados com a crise é a moradia onde muitas pessoas buscam reduzir o valor do aluguel pago mensalmente ao mesmo tempo, permitindo que essas pessoas possam morar em melhores localizações e com uma melhor relação custo-benefício. Porém o maior desafio é 
+Um dos pontos mais impactados com a crise é a moradia onde muitas pessoas buscam reduzir o valor do aluguel pago mensalmente ao mesmo tempo, permitindo que essas pessoas possam morar em melhores localizações e com uma melhor relação custo-benefício. Porém o maior desafio é encontrar uma pessoa de confiança e que ambos tenham afinidade.
 
 ## PROJETO
 

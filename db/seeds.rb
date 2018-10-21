@@ -20,6 +20,14 @@ Person.create(name: 'Addae',
               avatar: "https://api.adorable.io/avatars/285/#{[1,2,3,4,5,6,7,8,9,9].sample}")
 
 
+images = ['https://s3-sa-east-1.amazonaws.com/images-morablah/01.jpg',
+'https://s3-sa-east-1.amazonaws.com/images-morablah/02.jpg',
+'https://s3-sa-east-1.amazonaws.com/images-morablah/03.jpg',
+'https://s3-sa-east-1.amazonaws.com/images-morablah/04.jpg',
+'https://s3-sa-east-1.amazonaws.com/images-morablah/05.jpg',
+'https://s3-sa-east-1.amazonaws.com/images-morablah/06.jpg',
+'https://s3-sa-east-1.amazonaws.com/images-morablah/07.jpg',]
+
 Item.find_or_create_by(title: 'Aceita Pets')
 Item.find_or_create_by(title: 'apartamento cobertura')
 Item.find_or_create_by(title: 'armários na cozinha')
@@ -40,6 +48,10 @@ Item.find_or_create_by(title: 'Aceita Fumantes')
 
   3.times do
     ad.items << Item.all.sample
+  end
+  
+  4.times do
+    ad.images.create(url: images.sample)
   end
 end
 

@@ -1,7 +1,17 @@
 class AdsController < ApplicationController
   def show
     @ad = Ad.find_by(id: params[:id])
-    render json: @ad, include: [:items, :groups => { include: [:person,:preferences] }]
+    render json: @ad, include: [:items, :images, :groups => { include: [:person,:preferences] }]
+  end
+
+  def preferences
+    @preferences = Preference.all
+    render json: @preferences , status: :ok
+  end
+
+  def group
+    @group = Group.find_by(id: params[:group_id])
+    render json: @group, status: :ok
   end
 
   def create_group
@@ -11,11 +21,6 @@ class AdsController < ApplicationController
     else
       render json: @group.errors, status: :unprocessable_entity
     end
-  end
-
-  def preferences
-    @preferences = Preference.all
-    render json: @preferences , status: :ok
   end
 
   def group_params

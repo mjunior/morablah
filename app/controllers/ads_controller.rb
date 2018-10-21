@@ -11,7 +11,7 @@ class AdsController < ApplicationController
 
   def show_group
     @group = Group.find_by(id: params[:group_id])
-    render json: @group, include: [:person, :preferences], status: :ok
+    render json: @group, include: [:person, :preferences, :ad], status: :ok
   end
 
   def create_group

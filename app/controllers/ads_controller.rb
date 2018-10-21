@@ -16,7 +16,9 @@ class AdsController < ApplicationController
 
   def create_group
     @group = Group.new(group_params)
-    if @group.save
+    if @group.valid?
+       @group.remaning_amount = @group.ad.amount - @group.amount
+       @group.save
       render json: @group
     else
       render json: @group.errors, status: :unprocessable_entity

@@ -62,11 +62,16 @@ Preference.find_or_create_by(title: 'Deseja utilizar vaga da garagem')
 Preference.find_or_create_by(title: 'Autoriza receber visitas no apatamento')
 
 ad = Ad.first
-ad.groups.create(person: Person.first, amount: 1500)
+ad.groups.create(person: Person.last, amount: 2100)
 3.times do
   Group.last.preferences << Preference.all.sample
 end
 
+ad = Ad.first
+ad.groups.create(person: Person.first, amount: 3100)
+3.times do
+  Group.last.preferences << Preference.all.sample
+end
 
 ad = Ad.second
 ad.groups.create(person: Person.first, amount: 1000)

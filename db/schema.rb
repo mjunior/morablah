@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_21_053323) do
+ActiveRecord::Schema.define(version: 2018_10_21_064243) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2018_10_21_053323) do
     t.string "title"
     t.text "description"
     t.string "full_address"
-    t.string "amount"
+    t.float "amount"
     t.string "max_people"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 2018_10_21_053323) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.float "amount"
+    t.float "remaning_amount"
     t.index ["ad_id"], name: "index_groups_on_ad_id"
     t.index ["person_id"], name: "index_groups_on_person_id"
   end

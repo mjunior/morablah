@@ -4,7 +4,7 @@ class CreateAds < ActiveRecord::Migration[5.2]
       t.string :title
       t.text :description
       t.string :full_address
-      t.string :amount
+      t.float :amount
       t.string :max_people
 
       t.timestamps

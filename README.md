@@ -3,15 +3,12 @@
 ## PROBLEMA
 
 Vivemos um momento de crise onde temos a diminuição da renda, aumento dos preços e uma das maior taxas de desemprego da história. Juntamente com isso temos por outro lado o crescente movimento da economia compartilhada, gera faz com que as pessoas possam ter acessibilidade a mais serviços.
-Um dos pontos mais impactados com a crise é a moradia onde muitas pessoas buscam reduzir o valor do aluguel pago mensalmente ao mesmo tempo, permitindo que essas pessoas possam morar em melhores localizações e com uma melhor relação custo-benefício. Porém o maior desafio é encontrar uma pessoa de confiança e que ambos tenham afinidade.
+
+Um dos pontos mais impactados com a crise é a moradia onde muitas pessoas buscam reduzir o valor do aluguel sem gerar grandes impactos na qualidade de vida. Buscam imóveis para que possam morar em melhores localizações e com uma melhor relação custo-benefício. Porém o maior desafio é encontrar uma pessoa de confiança e que ambos tenham afinidade para poder dividir uma moradia.
 
 ## PROJETO
 
 O objetivo desse projeto é conectar pessoas na busca da locação de imóveis compartilhados, facilitando o processo de negociação 
-
-## SOBRE O MERCADO
-
-Em 2017 o número de processos em locação de imóveis obteve um crescimento de cerca de 33,4%, sendo que desse montante 87,9% tiveram como principal motivação a falta de pagamento de aluguel. Tais níveis de inadimplência se devem ao fato de ter uma diminuição da renda, devido ao grande volume de demissões devido crise, a decréscimo nas suas rendas e o 
 
 ## PERSONA
 
@@ -46,11 +43,12 @@ PERSONA 3
 
 ## SOLUÇÃO
 
+Assim surge a Moraablah. Uma plataforma para conectar pessoas facilitando a negociação e geram mais confiança para que ambos possam chegar a concretizar um negócio.
 
 ## DIFERENCIAIS COMPETITIVOS
 
 - Conexão entre diferentes pessoas gerando um relacionamento prévio e possibilitando uma interação de qualidade
-- Facilitar a negociação do valor pago por cada parte e proporcionar um desenvol
+- Facilitar a negociação do valor pago por cada parte e proporcionar um rápido desenrolar da negociação.
 
 ## FORMA DE MONETIZAÇÃO
 

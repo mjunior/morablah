@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 2018_10_21_064243) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.float "amount"
-    t.float "remaning_amount"
+    t.float "remaining_amount"
     t.index ["ad_id"], name: "index_groups_on_ad_id"
     t.index ["person_id"], name: "index_groups_on_person_id"
   end

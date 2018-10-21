@@ -9,15 +9,15 @@ class AdsController < ApplicationController
     render json: @preferences , status: :ok
   end
 
-  def group
+  def show_group
     @group = Group.find_by(id: params[:group_id])
-    render json: @group, status: :ok
+    render json: @group, include: [:person, :preferences], status: :ok
   end
 
   def create_group
     @group = Group.new(group_params)
     if @group.valid?
-       @group.remaning_amount = @group.ad.amount - @group.amount
+       @group.remaining_amount = @group.ad.amount - @group.amount
        @group.save
       render json: @group
     else

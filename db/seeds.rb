@@ -30,8 +30,7 @@ Item.find_or_create_by(title: 'apartamento cobertura')
 Item.find_or_create_by(title: 'Aceita Fumantes')
 
 10.times do
-  puts "1111"
-  ad =  Ad.create({
+  ad = Ad.create({
     title: "#{Faker::Artist.name} - Apartamento com 1 dorm, 48m²",
     description: 'Apartamento de 48m2 totalmente reformado. Está completamente decorado com móveis e eletrodomésticos novos. O prédio fica nos jardins , perto de estações de metrô e de tudo que a região dos jardins oferece. O edifício foi projetado pelo arquiteto Israel Gaiman no início dos anos 60.',
     full_address: 'Rua Bela Cintra, Jardim Paulista, São Paulo',
@@ -51,20 +50,20 @@ Preference.find_or_create_by(title: 'Deseja utilizar vaga da garagem')
 Preference.find_or_create_by(title: 'Autoriza receber visitas no apatamento')
 
 ad = Ad.first
-ad.groups.create(person: Person.first)
+ad.groups.create(person: Person.first, amount: 1500)
 3.times do
   Group.last.preferences << Preference.all.sample
 end
 
 
 ad = Ad.second
-ad.groups.create(person: Person.first)
+ad.groups.create(person: Person.first, amount: 1000)
 2.times do
   Group.last.preferences << Preference.all.sample
 end
 
 ad = Ad.third
-ad.groups.create(person: Person.first)
+ad.groups.create(person: Person.first, amount: 2000)
 3.times do
   Group.last.preferences << Preference.all.sample
 end

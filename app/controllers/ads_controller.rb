@@ -13,7 +13,12 @@ class AdsController < ApplicationController
     end
   end
 
+  def preferences
+    @preferences = Preference.all
+    render json: @preferences , status: :ok
+  end
+
   def group_params
-    params.merge(person_id: @current_user.id).permit(:ad_id, :person_id)
+    params.merge(person_id: @current_user.id).permit(:ad_id, :person_id, :amount, preference_ids: [])
   end
 end

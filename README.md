@@ -46,3 +46,27 @@ PERSONA 3
 
 ## TECNOLOGIA UTILIZADA
 
+- Ruby on Rails
+- Postgresql
+- Angular 6.1
+
+
+## API ##
+
+GET /items
+Listagem de items disponiveis para filtros
+
+GET /search?items=:ids
+Listagem de apartamentos de acordo com os itens solicitados
+
+GET /ads/:id
+Exibe informações de um anuncio. Descrição, Grupos criados e suas propostas de locação
+
+GET /preferences
+Lista as preferencias disponiveis para adicionar a uma proposta de locação compartilhada
+
+POST /ads/:ad_id/group
+HTTP HEADERS: PERSON_ID: <USER_ID>
+BODY: {preferences_ids: [1,2,3] }
+
+Cria um grupo com os interesses selecionados para um anuncio

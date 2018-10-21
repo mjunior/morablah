@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/me', to: 'people#me'
   get '/items', to: 'items#index'
   get '/search', to: 'search#index'
-
+  get '/preferences', to: 'ads#preferences'
   resources :ads do
     post 'group', to: 'ads#create_group' 
   end

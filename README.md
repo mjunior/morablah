@@ -40,6 +40,11 @@ PERSONA 3
 ## MAPA DE EMPATIA, VALUE PROPOSITION CANVAS E BUSINESS MODEL CANVAS
 
 
+![pense](https://raw.githubusercontent.com/mjunior/morablah/master/img/pensasente.jpeg)
+
+![canvas](https://raw.githubusercontent.com/mjunior/morablah/master/img/canvas.jpeg)
+
+![gaincreator](https://raw.githubusercontent.com/mjunior/morablah/master/img/gaincreator.jpeg)
 
 
 ## SOLUÇÃO
@@ -64,3 +69,6 @@ O projeto dessa monetizado através de duas formas principais
 
 ## TECNOLOGIA UTILIZADA
 
+- Ruby on Rails
+- Angular 6
+- PostgreSQL

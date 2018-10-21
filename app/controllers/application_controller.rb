@@ -3,7 +3,7 @@ class ApplicationController < ActionController::API
   
   #fake auth
   def current_user
-    person_id = request.headers["HTTP_PERSON_ID"]
+    person_id = params[:person_id] || request.headers["HTTP_PERSON_ID"]
     @current_user = Person.find_by(id: person_id)
   end
 end

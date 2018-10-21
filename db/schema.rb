@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_21_064243) do
+ActiveRecord::Schema.define(version: 2018_10_21_080122) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,24 @@ ActiveRecord::Schema.define(version: 2018_10_21_064243) do
     t.string "max_people"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "clause_statuses", force: :cascade do |t|
+    t.bigint "clause_id"
+    t.bigint "person_id"
+    t.boolean "accepted"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["clause_id"], name: "index_clause_statuses_on_clause_id"
+    t.index ["person_id"], name: "index_clause_statuses_on_person_id"
+  end
+
+  create_table "clauses", force: :cascade do |t|
+    t.bigint "proposal_id"
+    t.string "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["proposal_id"], name: "index_clauses_on_proposal_id"
   end
 
   create_table "group_preferences", force: :cascade do |t|
@@ -83,8 +101,18 @@ ActiveRecord::Schema.define(version: 2018_10_21_064243) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "proposals", force: :cascade do |t|
+    t.integer "person_one_id"
+    t.integer "person_two_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   add_foreign_key "ad_items", "ads"
   add_foreign_key "ad_items", "items"
+  add_foreign_key "clause_statuses", "clauses"
+  add_foreign_key "clause_statuses", "people"
+  add_foreign_key "clauses", "proposals"
   add_foreign_key "group_preferences", "groups"
   add_foreign_key "group_preferences", "preferences"
   add_foreign_key "groups", "ads"

@@ -4,4 +4,12 @@ class Proposal < ApplicationRecord
   has_many :clauses
   
   accepts_nested_attributes_for :clauses
+
+
+  def finish_by_user(user)
+    self.clauses.each do |clause|    
+      ClauseStatus.create(clause: clause, person: user)
+    end
+    byebug
+  end
 end

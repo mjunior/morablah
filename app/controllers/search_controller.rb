@@ -1,6 +1,11 @@
 class SearchController < ApplicationController
   def index
-    search = SearchFactory.perform params
-    render json: search
+    search = SearchService.new(item_params).perform
+    render json: search, include: [:items, :groups]
+  end
+
+
+  def item_params
+    params[:items]
   end
 end

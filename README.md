@@ -3,14 +3,13 @@
 
 ## PROBLEMA
 
+Vivemos um momento de crise onde temos a diminuição da renda, aumento dos preços e uma das maior taxas de desemprego da história. Juntamente com isso temos por outro lado o crescente movimento da economia compartilhada, gera faz com que as pessoas possam ter acessibilidade a mais serviços.
+
+Um dos pontos mais impactados com a crise é a moradia onde muitas pessoas buscam reduzir o valor do aluguel sem gerar grandes impactos na qualidade de vida. Buscam imóveis para que possam morar em melhores localizações e com uma melhor relação custo-benefício. Porém o maior desafio é encontrar uma pessoa de confiança e que ambos tenham afinidade para poder dividir uma moradia.
 
 ## PROJETO
 
 O objetivo desse projeto é conectar pessoas na busca da locação de imóveis compartilhados, facilitando o processo de negociação 
-
-## SOBRE O MERCADO
-
-Em 2017 o número de processos em locação de imóveis obteve um crescimento de cerca de 33,4%, sendo que desse montante 87,9% tiveram como principal motivação a falta de pagamento de aluguel. Tais níveis de inadimplência se devem ao fato de ter uma diminuição da renda, devido ao grande volume de demissões devido crise, a decréscimo nas suas rendas e o 
 
 ## PERSONA
 
@@ -26,8 +25,9 @@ PERSONA 2
 - Vinnys
 - 19 anos
 - Solteiro
-- 
-- 
+- Está em uma fase de descoberta profissional. Sempre foi habilidoso quanto aos estudos e está consolidando sua independência profissional e financeira. Está em uma nova fase no trabalho. Oportunidade que surgiu devido a sua dedicação demonstrada e também ao tempo de preparo ao longo da sua vida.
+- Gostaria de morar mais próximo ao seu trabalho, pois gostaria de ter uma boa qualidade de vida e também quer continuar se desenvolvendo profissionalmente no tempo que economizar, pois sabe que economizaria tempo e dinheiro, que poderia ser investido na sua carreira.
+- Ter disponibilidade de morar em uma casa compartilhada, porém não gostaria de investir tempo nesse atividade.
 
 PERSONA 3
 - Evelyn
@@ -39,35 +39,28 @@ PERSONA 3
 
 ## MAPA DE EMPATIA, VALUE PROPOSITION CANVAS E BUSINESS MODEL CANVAS
 
+
+
+
 ## SOLUÇÃO
+
+Assim surge a Moraablah. Uma plataforma para conectar pessoas facilitando a negociação e geram mais confiança para que ambos possam chegar a concretizar um negócio.
 
 ## DIFERENCIAIS COMPETITIVOS
 
+- Conexão entre diferentes pessoas gerando um relacionamento prévio e possibilitando uma interação de qualidade
+- Facilitar a negociação do valor pago por cada parte e proporcionar um rápido desenrolar da negociação.
+
 ## FORMA DE MONETIZAÇÃO
+
+O projeto dessa monetizado através de duas formas principais
+
+- Marketplace
+    Comissão de locação ou fee mensal, sendo que o parceiro pode optar por um ou outro dependendo do nível de clareza referente aos contratos fechados. Sendo que os mesmos são confirmados pelo parceiro e pelo cliente, para garantir a integridade do processo.
+    O valor é decrescente de acordo com a quantidade de fechamentos mensais
+
+- Taxa de implementação
+   Para utilização da plataforma poderá ser cobrado do parceiro uma taxa de implementação. O que dará direito a uma determinada quantidade de imóveis a ser exibida  até mesmo investimentos em marketing para melhor anunciar seus imóveis. Essa monetização terá o seu valor para o marketing das plataforma, para gerar prospecção e aumentar a chance de conversão de imóveis aumentando o retorno sobre a primeira opção que é o marketplace.
 
 ## TECNOLOGIA UTILIZADA
 
-- Ruby on Rails
-- Postgresql
-- Angular 6.1
-
-
-## API ##
-
-GET /items
-Listagem de items disponiveis para filtros
-
-GET /search?items=:ids
-Listagem de apartamentos de acordo com os itens solicitados
-
-GET /ads/:id
-Exibe informações de um anuncio. Descrição, Grupos criados e suas propostas de locação
-
-GET /preferences
-Lista as preferencias disponiveis para adicionar a uma proposta de locação compartilhada
-
-POST /ads/:ad_id/group
-HTTP HEADERS: PERSON_ID: <USER_ID>
-BODY: {preferences_ids: [1,2,3] }
-
-Cria um grupo com os interesses selecionados para um anuncio
